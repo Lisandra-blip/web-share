@@ -1,9 +1,27 @@
 
+class WebShare extends HTMLElement {
+  constructor() {
+    // Sempre chame super primeiro no construtor
+    super();
+
+    // escreva a funcionalidade do elemento aqui
+    this.attachShadow({mode: 'open'})
+
+    const wrapper = document.createElement('button');
+    wrapper.textContent = 'Enviar';
+
+    this.shadowRoot.append(wrapper);
+  }
+}
+customElements.define('web-share', WebShare);
+
+
+
 localStorage.setItem("urlTemplate", title);
 document.getElementById("result").innerText = localStorage.getItem("urlTemplate");
 
 
-  const shareButton = document.querySelector('#share-button');
+  const shareButton = document.querySelector('#share');
   const fileField = document.querySelector('#file');
 
 
@@ -43,6 +61,8 @@ if(fileField) {
     }
   });
 } 
+
+
 
 
 if ("serviceWorker" in navigator) {
