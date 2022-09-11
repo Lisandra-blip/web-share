@@ -1,0 +1,14 @@
+{
+  "name": "WebShareMobile",
+  "short_name": "WebShare",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://uploads-ssl.webflow.com/5fd2188df28fb24f6a63402c/604a0f980e199240beb4043e_Slide%204_3%20-%201%20(16).png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }
+  ]
+}
